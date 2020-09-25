@@ -2,6 +2,7 @@
 # github.com/scriptik/irip_halfPrice
 # Last Modified 25 SEP 2020
 /ip firewall address-list
+remove [find list=ip_halfprice]
 :do {add list=ip_halfprice address=103.215.223.69/32 comment="www.bestshow.co/"} on-error={}
 :do {add list=ip_halfprice address=109.109.32.38/32 comment="www.guilan-nezam.ir"} on-error={}
 :do {add list=ip_halfprice address=109.109.36.58/32 comment="www.lziau.ac.ir"} on-error={}
